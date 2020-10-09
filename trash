@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ! -d "$HOME/Trash" ]; then
+	mkdir "$HOME/Trash"
+fi
+
+for FILE in "$@"
+	do
+		mv "$FILE" ~/Trash/
+	done
